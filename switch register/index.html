@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>switch register</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="tabs">
+          <button id="loginTab" class="active">Login</button>
+          <button id="registerTab">Register</button>
+        </div>
+      
+        <div class="form-content">
+          <!-- Login Form -->
+          <div id="loginForm" class="form-panel active">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username" />
+            <input type="password" id="loginPassword" placeholder="Password" />
+            <button id="loginButton">Login</button>
+          </div>
+      
+          <!-- Register Form -->
+          <div id="registerForm" class="form-panel">
+            <h2>Register</h2>
+            <div class="role-selection">
+              <label>
+                <input type="radio" name="role" value="student" checked> Student
+              </label>
+              <label>
+                <input type="radio" name="role" value="parent"> Parent
+              </label>
+            </div>
+      
+            <!-- Student Fields (shown when student is selected) -->
+            <div id="studentFields" class="user-fields">
+              <input type="text" id="studentID" placeholder="Student ID" />
+              <input type="text" id="studentGrade" placeholder="Grade Level" />
+            </div>
+      
+            <!-- Parent Fields (shown when parent is selected) -->
+            <div id="parentFields" class="user-fields" style="display: none;">
+              <input type="text" id="parentChildName" placeholder="Child's Name" />
+              <input type="text" id="parentChildGrade" placeholder="Child's Grade" />
+            </div>
+      
+            <button id="registerButton">Register</button>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>      
+</body>
+</html>
