@@ -16,37 +16,39 @@
         <div class="form-content">
           <!-- Login Form -->
           <div id="loginForm" class="form-panel active">
-            <h2>Login</h2>
+            <h2>Log in</h2>
             <input type="text" id="loginUsername" placeholder="Username" />
             <input type="password" id="loginPassword" placeholder="Password" />
-            <button id="loginButton">Login</button>
+            <button type="submit" id="loginButton">Login</button>
           </div>
       
           <!-- Register Form -->
           <div id="registerForm" class="form-panel">
-            <h2>Register</h2>
+            <h2>Create Account</h2>
             <div class="role-selection">
               <label>
-                <input type="radio" name="role" value="student" checked> Student
+                <input type="radio" name="role" value="Job Seeker" checked>Job seeker
               </label>
               <label>
-                <input type="radio" name="role" value="parent"> Parent
+                <input type="radio" name="role" value="Recruiter"> Recruiter
               </label>
             </div>
-      
+                 
             <!-- Student Fields (shown when student is selected) -->
             <div id="studentFields" class="user-fields">
-              <input type="text" id="studentID" placeholder="Student ID" />
-              <input type="text" id="studentGrade" placeholder="Grade Level" />
+              <input type="email" id="email" placeholder="E-mail" />
+              <input type="text" id="Username" placeholder="User name" />
+              <input type="password" id="Password" placeholder="Password" />
             </div>
       
             <!-- Parent Fields (shown when parent is selected) -->
             <div id="parentFields" class="user-fields" style="display: none;">
-              <input type="text" id="parentChildName" placeholder="Child's Name" />
-              <input type="text" id="parentChildGrade" placeholder="Child's Grade" />
+              <input type="email" id="recruiter-email" placeholder="Recruiter E-mail" />
+              <input type="text" id="company-name" placeholder="Company name" />
+                <input type="password" id="password" placeholder="Password" />
             </div>
       
-            <button id="registerButton">Register</button>
+            <button type="submit" id="registerButton">Register</button>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ document.getElementById('loginTab').addEventListener('click', function() {
   const roleRadios = document.querySelectorAll('input[name="role"]');
   roleRadios.forEach(radio => {
     radio.addEventListener('change', function() {
-      if (this.value === 'student') {
+      if (this.value === 'Job Seeker') {
         document.getElementById('studentFields').style.display = 'block';
         document.getElementById('parentFields').style.display = 'none';
       } else {
